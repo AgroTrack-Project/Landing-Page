@@ -14,6 +14,34 @@ const translation =
     {
         en:
         {
+            // Navbar
+            "nav.features": "Features",
+            "nav.plans": "Plans",
+            "nav.forWho": "For who",
+            "nav.demo": "Demo",
+            "nav.signIn": "Sign in",
+            "nav.signUp": "Sign up",
+
+            
+            "features.title": "Everything you need, in one place",
+            "features.subtitle": "Features designed for everyday field work.",
+            "features.card1.title": "Soil monitoring",
+            "features.card1.desc": "Track humidity and temperature, and know the real status of your plots.",
+            "features.card2.title": "Irrigation recommendations",
+            "features.card2.desc": "Know exactly when to irrigate and when not to, without guessing.",
+            "features.card3.title": "Weather alerts",
+            "features.card3.desc": "Receive frost, drought and heavy rain warnings in time.",
+            "features.card4.title": "Crop history",
+            "features.card4.desc": "Keep a record of every planting and harvest by season.",
+
+            // Hero section
+            "hero.titleLine1": "Grow better with",
+            "hero.titleLine2": "real data",
+            "hero.description": "AgroTrack helps you register your plots, monitor soil conditions, and receive clear irrigation recommendations. Decide with data, not intuition.",
+            "hero.primaryCta": "Get started now",
+            "hero.secondaryCta": "Request demo",
+            "hero.badgeFirst": "No installation",
+            "hero.badgeSecond": "Built for the field",
 
             //AgroTrack Plans
            "paraquien.title": "Who is AgroTrack for?",
@@ -58,9 +86,49 @@ const translation =
             "enterprise-card.benefit-third": "Excel export and loss metrics",
             "enterprise-card.benefit-fourth":"Dedicated priority support",
             "enterprise-card.button": "Choose enterprise",
+
+            //Footer
+                "footer.title-phrase": "Grow better with real data.",
+                "footer.title-navigation": "Navigation",
+                "footer.title-characteristics": "Characteristics",
+                "footer.title-plans": "Plans",
+                "footer.title-for-who": "For who",
+                "footer.title-demo": "Demo",
+                "footer.title-social-media": "Social Media",
+                "footer.title-contact": "Contact",
+                "footer.title-copyright": "2026 AgroTrack — Andes Smart. All rights reserved.",
+                "footer.title-privacy-policy": "Privacy policy",
+                "footer.title-term-conditions": "Terms and conditions"
+
         },
         es_419:
         {
+            "features.title": "Todo lo que necesitas, en un solo lugar",
+            "features.subtitle": "Funciones diseñadas para el día a día en el campo.",
+            "features.card1.title": "Monitoreo de suelo",
+            "features.card1.desc": "Registra humedad y temperatura, y conoce el estado real de tus parcelas.",
+            "features.card2.title": "Recomendaciones de riego",
+            "features.card2.desc": "Sabe exactamente cuándo regar y cuándo no, sin adivinar.",
+            "features.card3.title": "Alertas climáticas",
+            "features.card3.desc": "Recibe avisos de heladas, sequías y lluvias intensas a tiempo.",
+            "features.card4.title": "Historial de cultivos",
+            "features.card4.desc": "Lleva el registro de cada siembra y cosecha por temporada.",
+            // Navbar
+            "nav.features": "Características",
+            "nav.plans": "Planes",
+            "nav.forWho": "Para quién",
+            "nav.demo": "Demo",
+            "nav.signIn": "Ingresar",
+            "nav.signUp": "Registrarse",
+
+            // Hero section
+            "hero.titleLine1": "Cultiva mejor con",
+            "hero.titleLine2": "datos reales",
+            "hero.description": "AgroTrack te ayuda a registrar tus parcelas, monitorear el suelo y recibir recomendaciones claras de riego. Decide con datos, no por intuición.",
+            "hero.primaryCta": "Comenzar ahora",
+            "hero.secondaryCta": "Solicitar demo",
+            "hero.badgeFirst": "Sin instalación",
+            "hero.badgeSecond": "Pensado para el campo",
 
             //Planes de AgroTrack
             "paraquien.title": "¿Para quién es AgroTrack?",
@@ -105,6 +173,19 @@ const translation =
             "enterprise-card.benefit-third": "Exportación Excel y métricas de mermas",
             "enterprise-card.benefit-fourth":"Soporte prioritario dedicado",
             "enterprise-card.button": "Elegir Empresa",
+
+            //Footer
+                "footer.title-phrase": "Cultiva mejor con datos reales.",
+                "footer.title-navigation": "Navegación",
+                "footer.title-characteristics": "Características",
+                "footer.title-plans": "Planes",
+                "footer.title-for-who": "Para quien",
+                "footer.title-demo": "Demo",
+                "footer.title-social-media": "Redes Sociales",
+                "footer.title-contact": "Contactos",
+                "footer.title-copyright": "© 2026 AgroTrack — Andes Smart. Todos los derechos reservados.",
+                "footer.title-privacy-policy": "Política de privacidad",
+                "footer.title-term-conditions": "Términos y condiciones",
         }
     }
 
@@ -128,3 +209,24 @@ function toggleLanguage(){
     });
 }
 
+function toggleMobileMenu() {
+    const navCollapse = document.getElementById("navCollapse");
+    const hamburgerButton = document.querySelector(".hamburger-button");
+
+    navCollapse.classList.toggle("open");
+    hamburgerButton.classList.toggle("active");
+
+    const isExpanded = navCollapse.classList.contains("open");
+    hamburgerButton.setAttribute("aria-expanded", isExpanded ? "true" : "false");
+}
+
+window.addEventListener("resize", function () {
+    const navCollapse = document.getElementById("navCollapse");
+    const hamburgerButton = document.querySelector(".hamburger-button");
+
+    if (window.innerWidth > 900 && navCollapse && hamburgerButton) {
+        navCollapse.classList.remove("open");
+        hamburgerButton.classList.remove("active");
+        hamburgerButton.setAttribute("aria-expanded", "false");
+    }
+});
