@@ -25,7 +25,7 @@ const translation =
             "problema.benefit3": "Maximizes crop yield",
             "problema.description": "Over 70% of Peruvian farmers make irrigation decisions by intuition. Too much water loses nutrients, too little stresses the crop. Either way, harvest is lost.",
             "problema.cta": "Grow better and earn more, without overspending on complicated technology",
-            "problema.solucionTitle": "Our Solution",
+            "problema.solutionTitle": "Our Solution",
             "problema.badge1": "Robust technology",
             "problema.badge2": "Easy to use",
             "problema.badge3": "Low operating cost",
