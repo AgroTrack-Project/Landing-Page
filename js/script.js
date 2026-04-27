@@ -14,8 +14,6 @@ const translation =
     {
         en:
         {
-
-
             //AgroTrack Plans
 
             // basic plan
@@ -53,6 +51,16 @@ const translation =
             "enterprise-card.benefit-third": "Excel export and loss metrics",
             "enterprise-card.benefit-fourth":"Dedicated priority support",
             "enterprise-card.button": "Choose enterprise",
+
+            //Demo request form
+            "demo.title": "Would you like to see it in action?",
+            "demo.subtitle": "We show you how AgroTrack adapts to your plots and crops",
+            "demo.formTitle": "Request a demo",
+            "demo.formSubtitle": "We’ll contact you within 24 hours.",
+            "demo.labelName": "Full Name",
+            "demo.labelEmail": "Email",
+            "demo.formButton": "Request demo",
+
         },
         es_419:
         {
@@ -94,6 +102,15 @@ const translation =
             "enterprise-card.benefit-third": "Exportación Excel y métricas de mermas",
             "enterprise-card.benefit-fourth":"Soporte prioritario dedicado",
             "enterprise-card.button": "Elegir Empresa",
+
+            //Fomulario Demo
+            "demo.title": "¿Te gustaría verlo en acción?",
+            "demo.subtitle": "Te mostramos cómo AgroTrack se adapta a tus parcelas y tu tipo de cultivo",
+            "demo.formTitle": "Solicita una demo",
+            "demo.formSubtitle": "Te contactamos en menos de 24 horas.",
+            "demo.labelName": "Nombre completo",
+            "demo.labelEmail": "Correo Electrónico",
+            "demo.formButton": "Solicitar demo",
         }
     }
 

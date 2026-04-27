@@ -23,23 +23,12 @@ body
     font-size: 32px;
     color: #2C3E2D;
 }
-.plans h2, .plan-p
-{
-    max-width: 1300px;
-    margin-left: auto;
-    margin-right: auto;
-}
-.plan-p
-{
-    margin-top: 10px;
-}
 .plan
 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     padding: 50px 5px;
-    max-width: 1300px;
     margin: 0 auto;
     gap: 40px;
     color: #666161;
@@ -47,10 +36,6 @@ body
 .plan button
 {
     color: #fff;
-}
-.pro-plan
-{
-
 }
 .plan-card {
     flex:1;
@@ -180,4 +165,135 @@ body
     padding: 7px 8px;
     border-radius: 5px;
 
+}
+/**
+        Section demo request form
+     */
+.demo-request-form
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 80px;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+}
+.content
+{
+    max-width: 400px;
+    min-width: 350px;
+}
+.content h2
+{
+    color: #2C3E2D;
+    margin-bottom: 0.2rem;
+}
+.content p
+{
+    opacity: 70%;
+    font-size: 0.8rem;
+}
+.form
+{
+    border: 1px solid #dfdfdf;
+    border-radius: 10px;
+    box-shadow: 0 0 3px 0 #dfdfdf;
+    padding: 20px;
+    max-width: 400px;
+    min-width: 350px;
+}
+.form h3
+{
+    color: #2C3E2D;
+    margin-bottom: 0.4rem;
+}
+.form p
+{
+    opacity: 70%;
+    font-size: 0.7rem;
+    margin-bottom: 0.7rem;
+}
+#fullName
+{
+    margin-bottom: 1rem;
+}
+.form form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 0.8rem;
+}
+.form form input {
+    display: block;
+    width: 100%;
+    background: #F5F0E8;
+    border: 2px solid #dfdfdf;
+    padding: 5px 10px;
+    border-radius: 3px;
+    outline: none;
+    transition: 0.1s;
+}
+.form form input:focus {
+    border: 2px solid #2D7A3A;
+
+}
+.form form button {
+    width: 100%;
+    background: #2D7A3A;
+    color: #fff;
+    padding: 7px 0;
+    border: none;
+    border-radius: 5px;
+    margin-top: 0.8rem;
+    cursor: pointer;
+    font-size: 0.7rem;
+    font-weight: bolder;
+}
+
+
+
+@media (max-width: 1024px) {
+
+    .plans {
+        padding: 50px 24px;
+    }
+
+    .demo-request-form {
+        padding: 40px 24px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .demo-request-form {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+    }
+
+    .content,
+    .form {
+        min-width: unset;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .form form label {
+        text-align: left;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .plans {
+        padding: 40px 16px;
+    }
+
+    .plan-card {
+        min-width: 100%;
+    }
+
+    .demo-request-form {
+        padding: 26px 16px;
+    }
 }
