@@ -10,6 +10,147 @@ body
     overflow-x: hidden;
 }
 
+:root {
+    --primary-green: #2D7A3A;
+    --dark-green: #2C3E2D;
+    --soft-green: #8FC594;
+    --light-bg: #F5F0E8;
+    --white: #FFFFFF;
+    --soft-gray: #ECE8E1;
+    --text-muted: #5F615C;
+    --border-color: #D9D9D9;
+}
+
+/*  PROBLEM SECTION
+*/
+.problema-section {
+    background: #FFFFFF;
+    padding: 56px 80px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.problema-inner {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.problema-title {
+    font-size: 1.7rem;
+    font-weight: 800;
+    color: var(--dark-green);
+    margin-bottom: 36px;
+}
+
+.problema-grid {
+    display: grid;
+    grid-template-columns: 190px 240px 1fr;
+    gap: 32px;
+    align-items: start;
+}
+
+.donut-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+}
+
+.legend { display: flex; flex-direction: column; gap: 10px; width: 100%; }
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: #1a1a1a;
+}
+
+.legend-dot { width: 13px; height: 13px; border-radius: 50%; flex-shrink: 0; }
+
+.middle-col h3 {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--dark-green);
+    margin-bottom: 20px;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.benefit-icon { width: 36px; height: 36px; flex-shrink: 0; }
+
+.benefit-item span { font-size: 0.85rem; color: #3D463C; }
+
+.right-col p {
+    font-size: 0.82rem;
+    color: #4a4a4a;
+    line-height: 1.65;
+    margin-bottom: 14px;
+}
+
+.problema-highlight {
+    font-size: 0.82rem !important;
+    font-weight: 700 !important;
+    color: var(--dark-green) !important;
+    margin-bottom: 20px !important;
+}
+
+.solucion-title {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--dark-green);
+    margin-bottom: 12px;
+}
+
+.solucion-badges { display: flex; gap: 14px; flex-wrap: wrap; align-items: center; }
+
+.solucion-badge {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.75rem;
+    color: #3D463C;
+}
+
+/* Responsive problema-section */
+@media (max-width: 900px) {
+    .problema-section {
+        padding: 40px 24px;
+    }
+
+    .problema-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .right-col {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (max-width: 600px) {
+    .problema-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .donut-wrap {
+        align-items: flex-start;
+    }
+
+    .right-col {
+        grid-column: unset;
+    }
+
+    .solucion-badges {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
 /**
     Section plans
  */

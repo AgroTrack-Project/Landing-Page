@@ -14,6 +14,22 @@ const translation =
     {
         en:
         {
+            //Problem Section
+
+            "problema.title": "The problem we solve",
+            "problema.legend1": "Intuition-based decisions (70%)",
+            "problema.legend2": "Data-informed decisions (30%)",
+            "problema.soilTitle": "Improve soil health",
+            "problema.benefit1": "Reduces nutrient loss",
+            "problema.benefit2": "Prevents water stress",
+            "problema.benefit3": "Maximizes crop yield",
+            "problema.description": "Over 70% of Peruvian farmers make irrigation decisions by intuition. Too much water loses nutrients, too little stresses the crop. Either way, harvest is lost.",
+            "problema.cta": "Grow better and earn more, without overspending on complicated technology",
+            "problema.solutionTitle": "Our Solution",
+            "problema.badge1": "Robust technology",
+            "problema.badge2": "Easy to use",
+            "problema.badge3": "Low operating cost",
+
             //AgroTrack Plans
 
             // basic plan
@@ -64,6 +80,21 @@ const translation =
         },
         es_419:
         {
+            //Problem Section
+
+            "problema.title": "El problema que resolvemos",
+            "problema.legend1": "Decisiones por intuición (70%)",
+            "problema.legend2": "Decisiones informadas (30%)",
+            "problema.soilTitle": "Mejorar la salud del suelo",
+            "problema.benefit1": "Reduce la pérdida de nutrientes",
+            "problema.benefit2": "Evita el estrés hídrico",
+            "problema.benefit3": "Maximiza el rendimiento",
+            "problema.description": "Más del 70% de los agricultores peruanos toman decisiones de riego por intuición. El exceso de agua pierde nutrientes, la falta, estresa al cultivo. En ambos casos, se pierde cosecha.",
+            "problema.cta": "Mejora tu cosecha y gana más, sin gastar de más en tecnología complicada",
+            "problema.solucionTitle": "Nuestra Solución",
+            "problema.badge1": "Tecnología robusta",
+            "problema.badge2": "Fácil de usar",
+            "problema.badge3": "Bajo costo operativo",
 
             //Planes de AgroTrack
 
