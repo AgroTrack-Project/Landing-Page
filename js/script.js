@@ -14,7 +14,22 @@ const translation =
     {
         en:
         {
+            // Navbar
+            "nav.features": "Features",
+            "nav.plans": "Plans",
+            "nav.forWho": "For who",
+            "nav.demo": "Demo",
+            "nav.signIn": "Sign in",
+            "nav.signUp": "Sign up",
 
+            // Hero section
+            "hero.titleLine1": "Grow better with",
+            "hero.titleLine2": "real data",
+            "hero.description": "AgroTrack helps you register your plots, monitor soil conditions, and receive clear irrigation recommendations. Decide with data, not intuition.",
+            "hero.primaryCta": "Get started now",
+            "hero.secondaryCta": "Request demo",
+            "hero.badgeFirst": "No installation",
+            "hero.badgeSecond": "Built for the field",
 
             //AgroTrack Plans
 
@@ -70,6 +85,22 @@ const translation =
         },
         es_419:
         {
+            // Navbar
+            "nav.features": "Características",
+            "nav.plans": "Planes",
+            "nav.forWho": "Para quién",
+            "nav.demo": "Demo",
+            "nav.signIn": "Ingresar",
+            "nav.signUp": "Registrarse",
+
+            // Hero section
+            "hero.titleLine1": "Cultiva mejor con",
+            "hero.titleLine2": "datos reales",
+            "hero.description": "AgroTrack te ayuda a registrar tus parcelas, monitorear el suelo y recibir recomendaciones claras de riego. Decide con datos, no por intuición.",
+            "hero.primaryCta": "Comenzar ahora",
+            "hero.secondaryCta": "Solicitar demo",
+            "hero.badgeFirst": "Sin instalación",
+            "hero.badgeSecond": "Pensado para el campo",
 
             //Planes de AgroTrack
 
@@ -144,3 +175,24 @@ function toggleLanguage(){
     });
 }
 
+function toggleMobileMenu() {
+    const navCollapse = document.getElementById("navCollapse");
+    const hamburgerButton = document.querySelector(".hamburger-button");
+
+    navCollapse.classList.toggle("open");
+    hamburgerButton.classList.toggle("active");
+
+    const isExpanded = navCollapse.classList.contains("open");
+    hamburgerButton.setAttribute("aria-expanded", isExpanded ? "true" : "false");
+}
+
+window.addEventListener("resize", function () {
+    const navCollapse = document.getElementById("navCollapse");
+    const hamburgerButton = document.querySelector(".hamburger-button");
+
+    if (window.innerWidth > 900 && navCollapse && hamburgerButton) {
+        navCollapse.classList.remove("open");
+        hamburgerButton.classList.remove("active");
+        hamburgerButton.setAttribute("aria-expanded", "false");
+    }
+});

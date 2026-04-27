@@ -6,11 +6,108 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
+<header class="site-header">
+    <!-- Main navigation bar -->
+    <nav class="navbar">
+        <!-- Brand logo -->
+        <a href="#" class="brand" aria-label="AgroTrack home">
+            <img src="assets/agrotrack-logo.png" alt="AgroTrack logo">
+        </a>
 
-    </header>
+        <!-- Hamburger button for mobile -->
+        <button
+                class="hamburger-button"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="navCollapse"
+                onclick="toggleMobileMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <!-- Collapsible navigation content -->
+        <div class="nav-collapse" id="navCollapse">
+            <!-- Navigation links -->
+            <div class="nav-menu">
+                <a href="#features" data-i18n="nav.features">Features</a>
+                <a href="#plans" data-i18n="nav.plans">Plans</a>
+                <a href="#audience" data-i18n="nav.forWho">For who</a>
+                <a href="#demo" data-i18n="nav.demo">Demo</a>
+            </div>
+
+            <!-- Navigation action buttons -->
+            <div class="nav-actions">
+                <!-- Button to change language-->
+                <button class="button-language header-language-button" type="button" onclick="toggleLanguage()" aria-label="Toggle language">
+                    <span class="language-icon" aria-hidden="true">🌐</span>
+                    <span>EN | ES</span>
+                </button>
+
+                <!-- Sign in button -->
+                <a href="#" class="auth-button sign-in-button" data-i18n="nav.signIn">Sign in</a>
+
+                <!-- Sign up button -->
+                <a href="#" class="auth-button sign-up-button" data-i18n="nav.signUp">Sign up</a>
+            </div>
+        </div>
+        </div>
+    </nav>
+</header>
 
     <main>
+        <!-- Hero section -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <!-- Hero text content -->
+                <div class="hero-text">
+                    <!-- Main hero title -->
+                    <h1 class="hero-title">
+                        <span data-i18n="hero.titleLine1">Grow better with</span>
+                        <span class="hero-title-accent" data-i18n="hero.titleLine2">real data</span>
+                    </h1>
+
+                    <!-- Hero description -->
+                    <p class="hero-description" data-i18n="hero.description">
+                        AgroTrack helps you register your plots, monitor soil conditions, and receive clear irrigation recommendations. Decide with data, not intuition.
+                    </p>
+
+                    <!-- Hero call to action buttons -->
+                    <div class="hero-buttons">
+                        <!-- Primary call to action -->
+                        <a href="#plans" class="hero-primary-button">
+                            <span data-i18n="hero.primaryCta">Get started now</span>
+                            <span aria-hidden="true">→</span>
+                        </a>
+
+                        <!-- Secondary call to action -->
+                        <a href="#demo" class="hero-secondary-button" data-i18n="hero.secondaryCta">Request demo</a>
+                    </div>
+
+                    <!-- Hero feature badges -->
+                    <div class="hero-badges">
+                        <!-- Badge: no installation -->
+                        <div class="hero-badge">
+                            <span class="hero-badge-icon" aria-hidden="true">🛡️</span>
+                            <span data-i18n="hero.badgeFirst">No installation</span>
+                        </div>
+
+                        <!-- Badge: built for the field -->
+                        <div class="hero-badge">
+                            <span class="hero-badge-icon" aria-hidden="true">🌱</span>
+                            <span data-i18n="hero.badgeSecond">Built for the field</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero image -->
+                <div class="hero-image-wrapper">
+                    <img src="assets/cultivo-agotrack.png" alt="Crop field" class="hero-image">
+                </div>
+            </div>
+        </section>
+
         <!-- Problem section -->
         <section class="problema-section" id="features">
             <div class="problema-inner">
