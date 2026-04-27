@@ -15,9 +15,14 @@ const translation =
         en:
         {
 
-
             //AgroTrack Plans
-
+           "paraquien.title": "Who is AgroTrack for?",
+           "paraquien.subtitle": "Designed for two profiles in Peruvian agriculture.",
+           "paraquien.card1.title": "Farmer",
+           "paraquien.card1.desc": "If you work your own plot, AgroTrack helps you make clear irrigation decisions and avoid losing your harvest to preventable mistakes.",
+           "paraquien.card2.title": "Agricultural Business Owner",
+           "paraquien.card2.desc": "If you manage several plots or an SME, get full visibility of your production, losses and water usage in one dashboard.",
+          
             // basic plan
             "basic-plan.title": "Clear plans, no surprises",
             "basic-plan.subtitle": "Choose the plan that adapts to your operation",
@@ -58,7 +63,13 @@ const translation =
         {
 
             //Planes de AgroTrack
-
+            "paraquien.title": "¿Para quién es AgroTrack?",
+            "paraquien.subtitle": "Pensado para dos perfiles del agro peruano.",
+            "paraquien.card1.title": "Agricultor",
+            "paraquien.card1.desc": "Si trabajas tu propia parcela, AgroTrack te ayuda a tomar decisiones claras de riego y a no perder tu cosecha por errores evitables.",
+            "paraquien.card2.title": "Empresario Agrícola",
+            "paraquien.card2.desc": "Si gestionas varias parcelas o una PYME, obtén visibilidad completa de tu producción, mermas y consumo de agua en un solo panel.",
+ 
             //Plan básico
             "basic-plan.title": "Planes claros, sin sorpresas",
             "basic-plan.subtitle": "Elige el plan que se ajusta a tu operación",
