@@ -80,7 +80,19 @@ const translation =
                 "footer.title-contact": "Contact",
                 "footer.title-copyright": "2026 AgroTrack — Andes Smart. All rights reserved.",
                 "footer.title-privacy-policy": "Privacy policy",
-                "footer.title-term-conditions": "Terms and conditions"
+                "footer.title-term-conditions": "Terms and conditions",
+
+            //Testimonials
+            "testimonials.title-of-opinion": "What the field says",
+            "testimonials.opinion-pedro": "With AgroTrack I now know exactly when to irrigate and how much water my crops need.\n" +
+                "I have reduced water waste and improved the quality of my tomatoes.",
+            "testimonials.occupation-pedro": "Farmer – Arequipa",
+            "testimonials.opinion-rosa": "Before, I checked everything manually. Now from my phone I can see humidity,\n" +
+                "weather, and alerts. AgroTrack saves me time every week.",
+            "testimonials.occupation-rosa": "Agricultural Producer – Ica",
+            "testimonials.opinion-julio": "I manage several fields and AgroTrack lets me control each one in a single place.\n" +
+                "I make faster decisions with better results.",
+            "testimonials.occupation-julio": "Agricultural Entrepreneur – Piura"
 
         },
         es_419:
@@ -152,6 +164,18 @@ const translation =
                 "footer.title-copyright": "© 2026 AgroTrack — Andes Smart. Todos los derechos reservados.",
                 "footer.title-privacy-policy": "Política de privacidad",
                 "footer.title-term-conditions": "Términos y condiciones",
+
+            //Testimonios
+            "testimonials.title-of-opinion": "Lo que dicen del campo",
+            "testimonials.opinion-pedro": "Con AgroTrack ahora sé exactamente cuándo regar y cuánto necesita mi cultivo. \n" +
+                "He reducido desperdicio de agua y mis tomates salen de mejor calidad.",
+            "testimonials.ocupation-pedro": "Agricultor – Arequipa",
+            "testimonials.opinion-rosa": "Antes revisaba todo manualmente. Hoy desde mi celular veo humedad, clima y alertas. \n" +
+                "AgroTrack me ahorra tiempo cada semana.",
+            "testimonials.ocupation-rosa": "Productora Agrícola – Ica",
+            "testimonials.opinion-julio": "Manejo varias parcelas y AgroTrack me permite controlar cada una en un solo lugar. \n" +
+                "Tomo decisiones más rápidas y con mejores resultados.",
+            "testimonials.ocupation-julio": "Empresario Agrícola – Piura"
         }
     }
 
