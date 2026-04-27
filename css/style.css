@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    font-family: sans-serif;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+/**
+    Section plans
+ */
+.plans
+{
+    background: #F5F0E8;
+    padding: 50px 80px;
+}
+.plans h2
+{
+    font-size: 32px;
+    color: #2C3E2D;
+}
+.plans h2, .plan-p
+{
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.plan-p
+{
+    margin-top: 10px;
+}
+.plan
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px 5px;
+    max-width: 1300px;
+    margin: 0 auto;
+    gap: 40px;
+    color: #666161;
+}
+.plan button
+{
+    color: #fff;
+}
+.pro-plan
+{
+
+}
+.plan-card {
+    flex:1;
+    min-width: 370px;
+    max-width: 380px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 7px;
+    margin-top: 60px;
+}
+.title-card
+{
+    margin-bottom: 15px;
+}
+.pro-plan .content-card .check
+{
+    color: #fff;
+}
+.title-card h3
+{
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+.section-card
+{
+    margin-bottom: 10px;
+}
+.section-card span
+{
+    margin-bottom: 15px;
+    font-weight: bolder;
+}
+.card-price
+{
+    font-size: 40px;
+}
+.card-time
+{
+    font-size: 15px;
+
+}
+.content-card p
+{
+    padding: 5px 0;
+}
+.content-card span
+{
+    margin-right: 10px;
+}
+.check
+{
+    color: green;
+}
+
+.plan-card button {
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #2D7A3A;
+    padding: 10px 0;
+    width: 70%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.7rem;
+    font-weight: bolder;
+    transition: transform 0.2s ease;
+
+}
+
+.plan-card button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    background-color: #a5e6b1;
+    color: #666161;
+}
+
+.pro-plan {
+    position: relative;
+    overflow: hidden;
+
+    background: linear-gradient(135deg, #1a5c26, #2D7A3A, #4CAF50, #1a5c26);
+    background-size: 300% 300%;
+    animation: gradiente-movimiento 4s ease infinite;
+    color: #fff;
+}
+.pro-plan::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+            120deg,
+            transparent 0%,
+            rgba(255, 255, 255, 0.15) 50%,
+            transparent 100%
+    );
+    animation: shimmer-card 2s ease infinite;
+}
+@keyframes shimmer-card {
+    0%   { left: -100%; }
+    60%  { left: 150%; }
+    100% { left: 150%; }
+}
+
+.pro-plan button
+{
+    background-color: #fff;
+    color: #2D7A3A;
+}
+
+.flex-content
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.simbol p
+{
+    background-color: #9dff00;
+    color: #2D7A3A;
+    padding: 7px 8px;
+    border-radius: 5px;
+
+}
