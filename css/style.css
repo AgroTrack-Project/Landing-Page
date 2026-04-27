@@ -1075,6 +1075,71 @@ body
     }
 }
 
+/* Testimonials */
+.testimonials {
+    background: #e8e3d8;
+    padding: 80px 8%;
+}
+
+.testimonials h2 {
+    font-size: 2.2rem;
+    color: #1f3b2d;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.testimonials-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+}
+
+.testimonial-card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.08);
+}
+
+.testimonial-card p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #3d4a42;
+    margin-bottom: 28px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.user-info img {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #6fa64b;
+}
+
+.user-info h4 {
+    font-size: 1rem;
+    color: #1f3b2d;
+    margin: 0;
+    font-weight: 700;
+}
+
+.user-info span {
+    font-size: 0.92rem;
+    color: #6b756f;
+}
+
 @media (max-width: 480px) {
     .para-quien-section {
         padding: 30px 16px;
