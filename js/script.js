@@ -14,21 +14,7 @@ const translation =
     {
         en:
         {
-            //Problem Section
 
-            "problema.title": "The problem we solve",
-            "problema.legend1": "Intuition-based decisions (70%)",
-            "problema.legend2": "Data-informed decisions (30%)",
-            "problema.soilTitle": "Improve soil health",
-            "problema.benefit1": "Reduces nutrient loss",
-            "problema.benefit2": "Prevents water stress",
-            "problema.benefit3": "Maximizes crop yield",
-            "problema.description": "Over 70% of Peruvian farmers make irrigation decisions by intuition. Too much water loses nutrients, too little stresses the crop. Either way, harvest is lost.",
-            "problema.cta": "Grow better and earn more, without overspending on complicated technology",
-            "problema.solutionTitle": "Our Solution",
-            "problema.badge1": "Robust technology",
-            "problema.badge2": "Easy to use",
-            "problema.badge3": "Low operating cost",
 
             //AgroTrack Plans
 
@@ -68,33 +54,22 @@ const translation =
             "enterprise-card.benefit-fourth":"Dedicated priority support",
             "enterprise-card.button": "Choose enterprise",
 
-            //Demo request form
-            "demo.title": "Would you like to see it in action?",
-            "demo.subtitle": "We show you how AgroTrack adapts to your plots and crops",
-            "demo.formTitle": "Request a demo",
-            "demo.formSubtitle": "We’ll contact you within 24 hours.",
-            "demo.labelName": "Full Name",
-            "demo.labelEmail": "Email",
-            "demo.formButton": "Request demo",
+            //Footer
+                "footer.title-phrase": "Grow better with real data.",
+                "footer.title-navigation": "Navigation",
+                "footer.title-characteristics": "Characteristics",
+                "footer.title-plans": "Plans",
+                "footer.title-for-who": "For who",
+                "footer.title-demo": "Demo",
+                "footer.title-social-media": "Social Media",
+                "footer.title-contact": "Contact",
+                "footer.title-copyright": "2026 AgroTrack — Andes Smart. All rights reserved.",
+                "footer.title-privacy-policy": "Privacy policy",
+                "footer.title-term-conditions": "Terms and conditions"
 
         },
         es_419:
         {
-            //Problem Section
-
-            "problema.title": "El problema que resolvemos",
-            "problema.legend1": "Decisiones por intuición (70%)",
-            "problema.legend2": "Decisiones informadas (30%)",
-            "problema.soilTitle": "Mejorar la salud del suelo",
-            "problema.benefit1": "Reduce la pérdida de nutrientes",
-            "problema.benefit2": "Evita el estrés hídrico",
-            "problema.benefit3": "Maximiza el rendimiento",
-            "problema.description": "Más del 70% de los agricultores peruanos toman decisiones de riego por intuición. El exceso de agua pierde nutrientes, la falta, estresa al cultivo. En ambos casos, se pierde cosecha.",
-            "problema.cta": "Mejora tu cosecha y gana más, sin gastar de más en tecnología complicada",
-            "problema.solucionTitle": "Nuestra Solución",
-            "problema.badge1": "Tecnología robusta",
-            "problema.badge2": "Fácil de usar",
-            "problema.badge3": "Bajo costo operativo",
 
             //Planes de AgroTrack
 
@@ -134,14 +109,18 @@ const translation =
             "enterprise-card.benefit-fourth":"Soporte prioritario dedicado",
             "enterprise-card.button": "Elegir Empresa",
 
-            //Fomulario Demo
-            "demo.title": "¿Te gustaría verlo en acción?",
-            "demo.subtitle": "Te mostramos cómo AgroTrack se adapta a tus parcelas y tu tipo de cultivo",
-            "demo.formTitle": "Solicita una demo",
-            "demo.formSubtitle": "Te contactamos en menos de 24 horas.",
-            "demo.labelName": "Nombre completo",
-            "demo.labelEmail": "Correo Electrónico",
-            "demo.formButton": "Solicitar demo",
+            //Footer
+                "footer.title-phrase": "Cultiva mejor con datos reales.",
+                "footer.title-navigation": "Navegación",
+                "footer.title-characteristics": "Características",
+                "footer.title-plans": "Planes",
+                "footer.title-for-who": "Para quien",
+                "footer.title-demo": "Demo",
+                "footer.title-social-media": "Redes Sociales",
+                "footer.title-contact": "Contactos",
+                "footer.title-copyright": "© 2026 AgroTrack — Andes Smart. Todos los derechos reservados.",
+                "footer.title-privacy-policy": "Política de privacidad",
+                "footer.title-term-conditions": "Términos y condiciones",
         }
     }
 
