@@ -22,6 +22,18 @@ const translation =
             "nav.signIn": "Sign in",
             "nav.signUp": "Sign up",
 
+            
+            "features.title": "Everything you need, in one place",
+            "features.subtitle": "Features designed for everyday field work.",
+            "features.card1.title": "Soil monitoring",
+            "features.card1.desc": "Track humidity and temperature, and know the real status of your plots.",
+            "features.card2.title": "Irrigation recommendations",
+            "features.card2.desc": "Know exactly when to irrigate and when not to, without guessing.",
+            "features.card3.title": "Weather alerts",
+            "features.card3.desc": "Receive frost, drought and heavy rain warnings in time.",
+            "features.card4.title": "Crop history",
+            "features.card4.desc": "Keep a record of every planting and harvest by season.",
+
             // Hero section
             "hero.titleLine1": "Grow better with",
             "hero.titleLine2": "real data",
@@ -85,6 +97,16 @@ const translation =
         },
         es_419:
         {
+            "features.title": "Todo lo que necesitas, en un solo lugar",
+            "features.subtitle": "Funciones diseñadas para el día a día en el campo.",
+            "features.card1.title": "Monitoreo de suelo",
+            "features.card1.desc": "Registra humedad y temperatura, y conoce el estado real de tus parcelas.",
+            "features.card2.title": "Recomendaciones de riego",
+            "features.card2.desc": "Sabe exactamente cuándo regar y cuándo no, sin adivinar.",
+            "features.card3.title": "Alertas climáticas",
+            "features.card3.desc": "Recibe avisos de heladas, sequías y lluvias intensas a tiempo.",
+            "features.card4.title": "Historial de cultivos",
+            "features.card4.desc": "Lleva el registro de cada siembra y cosecha por temporada.",
             // Navbar
             "nav.features": "Características",
             "nav.plans": "Planes",
