@@ -304,3 +304,13 @@ window.addEventListener("resize", function () {
         hamburgerButton.setAttribute("aria-expanded", "false");
     }
 });
+document.addEventListener("DOMContentLoaded", function() {
+    document.documentElement.lang = currentLanguage === "en" ? "en" : "es";
+    const elements = document.querySelectorAll("[data-i18n]");
+    elements.forEach(function (element) {
+        const key = element.getAttribute("data-i18n");
+        if (translation[currentLanguage] && translation[currentLanguage][key]) {
+            element.textContent = translation[currentLanguage][key];
+        }
+    });
+});
