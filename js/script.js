@@ -21,6 +21,7 @@ const translation =
                 "nav.demo": "Demo",
                 "nav.signIn": "Sign in",
                 "nav.signUp": "Sign up",
+                "nav.goToPanel": "Go to Panel",
 
                 // Hero section
                 "hero.titleLine1": "Grow better with",
@@ -146,6 +147,7 @@ const translation =
                 "nav.demo": "Demo",
                 "nav.signIn": "Ingresar",
                 "nav.signUp": "Registrarse",
+                "nav.goToPanel": "Ir a panel",
 
                 // Hero section
                 "hero.titleLine1": "Cultiva mejor con",
@@ -281,6 +283,25 @@ function toggleLanguage(){
         const key = element.getAttribute("data-i18n");
         element.textContent = translation[currentLanguage][key];
     });
+}
+
+/**
+ * Navigate to the panel with a professional animation
+ */
+function navigateToPanelWithAnimation() {
+    const panelButton = document.querySelector(".panel-button");
+    const panelUrl = "https://agro-track.andessmart.workers.dev";
+    
+    // Add animation class to button
+    panelButton.classList.add("animate-exit");
+    
+    // Add animation to body for fade out effect
+    document.body.classList.add("page-exit-animation");
+    
+    // Navigate after animation completes
+    setTimeout(() => {
+        window.location.href = panelUrl;
+    }, 600);
 }
 
 function toggleMobileMenu() {
