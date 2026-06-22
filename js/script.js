@@ -301,7 +301,7 @@ function toggleLanguage(){
  */
 function navigateToPanelWithAnimation() {
     const panelButton = document.querySelector(".panel-button");
-    const panelUrl = "https://agro-track.andessmart.workers.dev";
+    const panelUrl = "https://agro-track.vitaltrek.workers.dev/home";
     
     // Add animation class to button
     panelButton.classList.add("animate-exit");
