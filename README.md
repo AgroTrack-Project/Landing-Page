@@ -4,7 +4,7 @@ Cultiva mejor con datos reales.
 
 Sitio web estático oficial del modelo de negocio AgroTrack, una plataforma que ayuda a agricultores a registrar sus parcelas, monitorear las condiciones del suelo y recibir recomendaciones claras de riego, decidiendo con datos y no con intuición.
 
-Demo en vivo: [https://agrotrack-project.github.io/Landing-Page/](https://agrotrack-project.github.io/Landing-Page/)
+Landing page: [https://agrotrack-project.github.io/Landing-Page/](https://agrotrack-project.github.io/Landing-Page/)
 
 ---
 
@@ -86,9 +86,3 @@ Este repositorio sigue las siguientes convenciones para mantener consistencia en
 - GitFlow como workflow de branching (`main`, `develop`, `feature/*`, `release/*`, `hotfix/*`).
 - Conventional Commits para los mensajes de commit (`feat:`, `fix:`, `chore:`, etc.).
 - Semantic Versioning para el nombrado de releases (versión vigente: `release/v3.0.0`).
-
----
-
-## Licencia
-
-Este proyecto se distribuye bajo la licencia MIT. Ver el archivo [LICENSE](./LICENSE) para más detalles.
