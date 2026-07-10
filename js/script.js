@@ -21,7 +21,6 @@ const translation =
                 "nav.demo": "Demo",
                 "nav.signIn": "Sign in",
                 "nav.signUp": "Sign up",
-                "nav.goToPanel": "Go to Panel",
 
                 // Hero section
                 "hero.titleLine1": "Grow better with",
@@ -142,7 +141,6 @@ const translation =
                 "about.teamDescription": "We are a team dedicated to transforming agriculture through technology.",
                 "about.productTitle": "About the product",
                 "about.productDescription": "AgroTrack is an intuitive tool designed specifically for the needs of the modern farmer."
-
             },
         es_419:
             {
@@ -153,7 +151,6 @@ const translation =
                 "nav.demo": "Demo",
                 "nav.signIn": "Ingresar",
                 "nav.signUp": "Registrarse",
-                "nav.goToPanel": "Ir a panel",
 
                 // Hero section
                 "hero.titleLine1": "Cultiva mejor con",
@@ -272,6 +269,7 @@ const translation =
                 "about.teamDescription": "Somos un equipo dedicado a transformar la agricultura mediante la tecnología.",
                 "about.productTitle": "Sobre el producto",
                 "about.productDescription": "AgroTrack es una herramienta intuitiva diseñada específicamente para las necesidades del agricultor moderno."
+                
             }
 
     }
@@ -296,25 +294,6 @@ function toggleLanguage(){
     });
 }
 
-/**
- * Navigate to the panel with a professional animation
- */
-function navigateToPanelWithAnimation() {
-    const panelButton = document.querySelector(".panel-button");
-    const panelUrl = "https://agro-track.vitaltrek.workers.dev/home";
-    
-    // Add animation class to button
-    panelButton.classList.add("animate-exit");
-    
-    // Add animation to body for fade out effect
-    document.body.classList.add("page-exit-animation");
-    
-    // Navigate after animation completes
-    setTimeout(() => {
-        window.location.href = panelUrl;
-    }, 600);
-}
-
 function toggleMobileMenu() {
     const navCollapse = document.getElementById("navCollapse");
     const hamburgerButton = document.querySelector(".hamburger-button");
@@ -335,14 +314,4 @@ window.addEventListener("resize", function () {
         hamburgerButton.classList.remove("active");
         hamburgerButton.setAttribute("aria-expanded", "false");
     }
-});
-document.addEventListener("DOMContentLoaded", function() {
-    document.documentElement.lang = currentLanguage === "en" ? "en" : "es";
-    const elements = document.querySelectorAll("[data-i18n]");
-    elements.forEach(function (element) {
-        const key = element.getAttribute("data-i18n");
-        if (translation[currentLanguage] && translation[currentLanguage][key]) {
-            element.textContent = translation[currentLanguage][key];
-        }
-    });
 });
