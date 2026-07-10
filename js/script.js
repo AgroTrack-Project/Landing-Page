@@ -21,6 +21,7 @@ const translation =
                 "nav.demo": "Demo",
                 "nav.signIn": "Sign in",
                 "nav.signUp": "Sign up",
+                "nav.goToPanel": "Go to Panel",
 
                 // Hero section
                 "hero.titleLine1": "Grow better with",
@@ -151,6 +152,7 @@ const translation =
                 "nav.demo": "Demo",
                 "nav.signIn": "Ingresar",
                 "nav.signUp": "Registrarse",
+                "nav.goToPanel": "Ir a panel",
 
                 // Hero section
                 "hero.titleLine1": "Cultiva mejor con",
@@ -294,6 +296,17 @@ function toggleLanguage(){
     });
 }
 
+/**
+ * Navigate to the given url with a professional fade-out animation
+ */
+function navigateWithAnimation(url) {
+    document.body.classList.add("page-exit-animation");
+
+    setTimeout(() => {
+        window.location.href = url;
+    }, 600);
+}
+
 function toggleMobileMenu() {
     const navCollapse = document.getElementById("navCollapse");
     const hamburgerButton = document.querySelector(".hamburger-button");
@@ -314,4 +327,14 @@ window.addEventListener("resize", function () {
         hamburgerButton.classList.remove("active");
         hamburgerButton.setAttribute("aria-expanded", "false");
     }
+});
+document.addEventListener("DOMContentLoaded", function() {
+    document.documentElement.lang = currentLanguage === "en" ? "en" : "es";
+    const elements = document.querySelectorAll("[data-i18n]");
+    elements.forEach(function (element) {
+        const key = element.getAttribute("data-i18n");
+        if (translation[currentLanguage] && translation[currentLanguage][key]) {
+            element.textContent = translation[currentLanguage][key];
+        }
+    });
 });

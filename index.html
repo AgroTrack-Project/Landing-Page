@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<!-- Header / Navigation -->
 <header class="site-header">
     <!-- Main navigation bar -->
     <nav class="navbar">
@@ -45,17 +46,15 @@
                     <span>EN | ES</span>
                 </button>
 
-                <!-- Sign in button -->
-                <a href="#" class="auth-button sign-in-button" data-i18n="nav.signIn">Sign in</a>
-
-                <!-- Sign up button -->
-                <a href="#" class="auth-button sign-up-button" data-i18n="nav.signUp">Sign up</a>
+                <!-- Auth buttons -->
+                <button onclick="navigateWithAnimation('https://agro-track.vitaltrek.workers.dev/login')" class="auth-button sign-in-button" type="button" data-i18n="nav.signIn">Ingresar</button>
+                <button onclick="navigateWithAnimation('https://agro-track.vitaltrek.workers.dev/register')" class="auth-button sign-up-button" type="button" data-i18n="nav.signUp">Registrarse</button>
             </div>
         </div>
     </nav>
 </header>
 <main>
-    <!-- Hero section -->
+    <!-- Hero Section: main value proposition and CTAs -->
     <section class="hero-section">
         <div class="hero-content">
             <!-- Hero text content -->
@@ -106,7 +105,7 @@
         </div>
     </section>
 
-    <!-- Problem section -->
+    <!-- Problem Statement Section: pain points solved by AgroTrack -->
     <section class="problema-section" id="features">
         <div class="problema-inner">
             <h2 class="problema-title" data-i18n="problema.title">The problem we solve</h2>
@@ -193,7 +192,7 @@
 
 
 
-    <!-- Features section -->
+    <!-- Features Section: key product benefits -->
     <section class="features-section" id="features-cards">
         <div class="features-inner">
             <h2 data-i18n="features.title">Todo lo que necesitas, en un solo lugar</h2>
@@ -290,6 +289,7 @@
             </div>
         </div>
     </section>
+    <!-- Plans Section: pricing/plan options per segment -->
     <section class="plans" id="plans">
         <h2 data-i18n="basic-plan.title">Clear plans, no surprises</h2>
         <p data-i18n="basic-plan.subtitle">Choose the plan that adapts to your operation</p>
