@@ -286,21 +286,13 @@ function toggleLanguage(){
 }
 
 /**
- * Navigate to the panel with a professional animation
+ * Navigate to the given url with a professional fade-out animation
  */
-function navigateToPanelWithAnimation() {
-    const panelButton = document.querySelector(".panel-button");
-    const panelUrl = "https://agro-track.andessmart.workers.dev";
-    
-    // Add animation class to button
-    panelButton.classList.add("animate-exit");
-    
-    // Add animation to body for fade out effect
+function navigateWithAnimation(url) {
     document.body.classList.add("page-exit-animation");
-    
-    // Navigate after animation completes
+
     setTimeout(() => {
-        window.location.href = panelUrl;
+        window.location.href = url;
     }, 600);
 }
 
