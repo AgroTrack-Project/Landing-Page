@@ -135,8 +135,13 @@ const translation =
                 "testimonials.occupation-rosa": "Agricultural Producer – Ica",
                 "testimonials.opinion-julio": "I manage several fields and AgroTrack lets me control each one in a single place.\n" +
                     "I make faster decisions with better results.",
-                "testimonials.occupation-julio": "Agricultural Entrepreneur – Piura"
-
+                "testimonials.occupation-julio": "Agricultural Entrepreneur – Piura",
+                
+                // About Team & Product
+                "about.teamTitle": "About the team",
+                "about.teamDescription": "We are a team dedicated to transforming agriculture through technology.",
+                "about.productTitle": "About the product",
+                "about.productDescription": "AgroTrack is an intuitive tool designed specifically for the needs of the modern farmer."
             },
         es_419:
             {
@@ -260,7 +265,13 @@ const translation =
                 "testimonials.ocupation-rosa": "Productora Agrícola – Ica",
                 "testimonials.opinion-julio": "Manejo varias parcelas y AgroTrack me permite controlar cada una en un solo lugar. \n" +
                     "Tomo decisiones más rápidas y con mejores resultados.",
-                "testimonials.ocupation-julio": "Empresario Agrícola – Piura"
+                "testimonials.ocupation-julio": "Empresario Agrícola – Piura",
+
+                "about.teamTitle": "Sobre el equipo",
+                "about.teamDescription": "Somos un equipo dedicado a transformar la agricultura mediante la tecnología.",
+                "about.productTitle": "Sobre el producto",
+                "about.productDescription": "AgroTrack es una herramienta intuitiva diseñada específicamente para las necesidades del agricultor moderno."
+                
             }
 
     }
