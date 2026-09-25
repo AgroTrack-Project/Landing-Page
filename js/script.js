@@ -137,9 +137,7 @@ const translation =
                     "I make faster decisions with better results.",
                 "testimonials.occupation-julio": "Agricultural Entrepreneur – Piura",
                 
-                // About Team & Product
-                "about.teamTitle": "About the team",
-                "about.teamDescription": "We are a team dedicated to transforming agriculture through technology.",
+                // About Team & Product 
                 "about.productTitle": "About the product",
                 "about.productDescription": "AgroTrack is an intuitive tool designed specifically for the needs of the modern farmer."
             },
@@ -267,8 +265,6 @@ const translation =
                     "Tomo decisiones más rápidas y con mejores resultados.",
                 "testimonials.ocupation-julio": "Empresario Agrícola – Piura",
 
-                "about.teamTitle": "Sobre el equipo",
-                "about.teamDescription": "Somos un equipo dedicado a transformar la agricultura mediante la tecnología.",
                 "about.productTitle": "Sobre el producto",
                 "about.productDescription": "AgroTrack es una herramienta intuitiva diseñada específicamente para las necesidades del agricultor moderno."
                 
